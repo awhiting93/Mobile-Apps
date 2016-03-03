@@ -1,0 +1,29 @@
+/* Andrew Whiting, CS337-2, Web Project III, Due: 10/11/13 */
+#top {
+    color:rgba(150,0,255, 0.6);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: Times New Roman;
+    color:rgba(150,0,255, 0.6);
+}
+
+.ref {
+    font-weight: bold;
+}
+
+.verse {
+    text-indent: 30px;
+	font-style: italics;
+}
+
+body {
+    background-color: rgba(180,180,180)!important;
+}
+
+div {
+	background-color:rgba(255,255,255,0.5);
+	text-align:center;
+}
+    

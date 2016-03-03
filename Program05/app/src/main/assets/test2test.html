@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Test Page</title>
+	<meta charset="UTF-8" />	
+</head>
+<body>
+	<h1 id="top">Something</h1>
+	<hr />
+	<pre style="font-weight:bold">
+	<script type="text/javascript">
+	<!--
+	var days  = new Array("Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat");
+	
+	function customCompare(a, b)
+	{
+		if(a == b)
+		   return 0;
+		if(a < b)
+		   return 1;
+		else
+		   return -1;
+	}
+	function removeItem()
+	{
+		days.sort(customCompare);
+		days.reverse();
+		document.myform.dayofweek.innerHTML = "";
+		
+		for(var index in days)
+		{
+			document.myform.dayofweek.innerHTML += "<option " 
+												+ " value='" 
+												+ index 
+												+ "'>"
+												+ days[index]
+												+ "</option>";
+		}
+	}
+	
+	function makeDropdown()
+	{
+		days.unshift(document.myform.mybox.value);
+		
+		var today = new Date();
+		var day   = today.getDay();
+		
+		document.myform.dayofweek.innerHTML = "";
+			
+		for(var index in days)
+		{
+			document.myform.dayofweek.innerHTML += "<option " 
+				                                + (index == day ? "selected='selected'" : " ")
+												+ " value='" 
+												+ index 
+												+ "'>"
+												+ days[index]
+												+ "</option>";
+		}
+	}
+	//-->
+	</script>
+	</pre>
+	
+	<table id="mytable">
+	
+	</table>
+	
+	<form action="test.html" name="myform" id="myform">
+		<input name="mybox" id="mybox" type="text" />
+		<input name="mybox2" id="mybox2" type="text" />
+		<input type="button" onclick="makeDropdown();" value="Add An Item!" />
+		<input type="button" onclick="removeItem();" value="Remove An Item!";" />
+		<select name="dayofweek" id="dayofweek">
+		</select>
+	</form>
+	<footer>
+		<a href="index.html" title="This is a test">My Home Page</a>
+	</footer>
+</body>
+</html>	

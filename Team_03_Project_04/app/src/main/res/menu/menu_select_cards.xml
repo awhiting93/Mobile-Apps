@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="whitingstevens.team_03_project_04.SelectCardsActivity">
+    <item android:id="@+id/bob"
+        android:title="@string/add_new_folder"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom|withText"/>
+</menu>

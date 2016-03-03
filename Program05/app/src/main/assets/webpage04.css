@@ -1,0 +1,67 @@
+/* Andrew Whiting */
+/*    CS337-2     */
+/*    10/30/13    */
+
+/* Body Styles */
+header, div{
+	text-align:center;
+}
+div{
+	text-align:center;
+	background-color:rgb(90,205,177);
+	border: 2px solid black;
+	border-radius:7%;
+}
+
+nav{
+	background-color:rgb(90,205,177);
+	float:left;
+	padding:4px;
+	border: 2px solid black;
+	margin: 4px;
+	border-radius: 5%;
+}
+
+address{
+	text-align:center;
+	font-size:8pt;
+	font-family:Verdana;
+	font-weight:bold;
+	background-color:rgb(90,205,177);
+	padding:2px;
+	border-radius:7%;
+}
+
+h1, h2, h3{
+	text-align:center;
+}
+
+/* Table Styles */
+p{
+	font-size:14pt;
+}
+
+table{
+text-align:center;
+}
+
+tr{
+height:3.0em;
+}
+th{
+   background-color:rgb(90,205,177); 
+   width:10%;
+}
+
+td{
+	width:10%
+}
+
+table, th, td{
+    border:2px solid black;
+	border-collapse:collapse;
+}
+
+.empty{
+background-color:rgb(170,170,170)
+}

@@ -1,0 +1,8 @@
+Field Sets
+-Group fields together with a border box to show the fields belong together
+-Can add a legend as a caption
+
+	<fieldset>
+		<legend>text</legend>
+		...input tags...
+	</fieldset>

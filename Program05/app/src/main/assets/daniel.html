@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Daniel Swan -->
+		<!-- CS337-2 -->
+		<!-- 11/25/2013 -->
+		<meta charset="UTF-8" />
+		<title>Auction Log</title>
+
+		<link href="ahstyles.css" rel="stylesheet" type="text/css" />
+		<script src="bidstxt.js" type="text/javascript"></script>
+   </head>
+
+   <body onload="setInterval('bidTimer', 1000)">
+      <form name="bidForm" id="bidForm">
+
+         <header>
+            <img src="Freistattlogo.jpg" alt="Freistatt Auction Barn" />
+            <nav class="horizontal">
+               <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="#">Auctions</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Schedule</a></li>
+                  <li><a href="#">Contacts</a></li>
+               </ul>
+            </nav>
+         </header>
+        <section id="intro">
+           <h1>Silent Auction</h1>
+           <h2>Tan-Hyde Farm</h2>
+
+			<table id="summarytable">
+				<tr>
+					<th>Bidding Date</th>
+					<td id="bidDate"></td>
+				</tr>
+				<tr>
+					<th>Lot #121</th>
+					<td>.357 Don Jeer Tractor X64 (2015)</td>
+				</tr>
+				<tr>
+					<th>Latest Bid</th>
+					<td>
+						<input id="latestBid" name="latestBid" readonly="readonly" />
+					</td>
+				</tr>
+				<tr>
+					<th>Highest Bid</th>
+					<td>
+						<input id="highestBid" name="highestBid" readonly="readonly" />
+					</td>
+				</tr>
+				<tr>
+					<th>Bidding Ends</th>
+					<td id="timeLeft">2:00</td>
+				</tr>
+           </table>
+
+           <table id="newbidtable">
+              <tr>
+                 <th colspan="2" id="newtitle">Enter New Bid</th>
+              </tr>
+              <tr>
+                 <th>Bidder ID</th>
+                 <td>
+                    <input id="bidId" name="bidId" />
+                 </td>
+              </tr>
+              <tr>
+                 <th>Bid Amount</th>
+                 <td>
+                    <input id="bidAmount" name="bidAmount" />
+                 </td>
+              </tr>
+              <tr>
+                 <th id="buttons" colspan="2">
+                    <input type="button" value="Submit" onclick="addBid()"/>
+                    <input type="button" value="Remove Last Bid" onclick="removeBid()" />
+                 </th>
+              </tr>
+           </table>
+
+        </section>
+
+        <section id="bidHistory">
+           <h1>Bid History</h1>
+           <textarea id="bidList" name="bidList"></textarea>
+        </section>
+        <footer>
+           <address>
+              Freistatt Auction Barn &#183;
+              CS337 Dyrt Rhoad 2 &#183;
+              Prayeri Mud, IL  20002
+           </address>
+        </footer>
+
+     </form>
+  </body>
+
+</html>

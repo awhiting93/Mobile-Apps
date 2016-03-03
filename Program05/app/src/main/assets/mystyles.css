@@ -1,0 +1,60 @@
+body {
+   background-color:rgb(0,0,0) !important; 
+   color:#FFF;
+}
+h1 {
+   text-align:left;
+   padding: 5px;
+   border: 5px solid blue;
+   border-radius: 100px;
+   -webkit-transition: all 2.0s;
+   -moz-transition: all 2.0s;
+   transition: all 2.0s;
+}
+
+h1:hover{
+   padding-left: 42%;
+}
+	
+hr {
+	height:20px;
+	color:blue; 
+	background-color:blue;
+	color:blue;
+}
+
+#top {
+   color:rgb(255,0,0);
+   color:rgba(255,0,0,0.6);
+}
+
+a {
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   transition: all 0.5s;
+}
+
+a:link {
+    color:rgb(0,0,0);
+}
+
+a:visited {
+   color:green;
+}
+
+a:hover {
+   color:red;
+   font-size: 14pt;
+}
+
+a:active {
+   color:white;
+}
+
+#wakeuporder{
+   display:none;
+}
+
+#wakeup:hover + #wakeuporder{
+   display:inline;
+}

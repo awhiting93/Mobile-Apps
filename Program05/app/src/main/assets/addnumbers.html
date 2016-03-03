@@ -1,0 +1,22 @@
+<html>
+<body bgcolor="red" style="text-align:center;">
+<script type="text/javascript">
+            function dosomething(){
+                var result;
+                
+                result = Number(document.getElementById("left_operand").value) +
+                         Number(document.getElementById("right_operand").value);
+                document.getElementById("result_text").innerHTML = "Result: " + result;
+            }
+        </script>
+<h1>Add Two Numbers:</h1>
+<h1 id="result_text">Result:&nbsp;</h1>
+<form>
+    <input id="left_operand" type="number" value="left_operand"/>
+    </br>
+    <input id="right_operand" type="number" value="right_operand"/>
+    </br>
+    <input type="button" onclick="dosomething()" value="Add Numbers"/>
+</form>
+</body>
+</html>

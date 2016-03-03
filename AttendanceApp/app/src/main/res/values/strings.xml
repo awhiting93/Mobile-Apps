@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Attendance Pro</string>
+    <string name="default_name">Student Name</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="stats_heading">Statistics</string>
+    <string name="defaultValue">--</string>
+    <string name="backToStudents">Back To Students</string>
+
+    <!-- Stats headings -->
+    <string name="presentHeading"># Present:</string>
+    <string name="absentHeading"># Absent:</string>
+    <string name="tardyHeading"># Tardy:</string>
+    <string name="unknownHeading"># Unknown:</string>
+    <string name="totalHeading"># Total:</string>
+    
+    <!-- Button Names -->
+    <string name="calcStatsButton">Finish</string>
+    <string name="previousButton">Previous</string>
+    <string name="nextButton">Next</string>
+    
+    <!-- Attendance statuses -->
+    <string name="presentStatus">Present</string>
+    <string name="absentStatus">Absent</string>
+    <string name="tardyStatus">Tardy</string>
+    <string name="unknownStatus">Unknown</string>
+
+    <!-- List of possible attendance statuses -->
+    <string-array name="attendance_status">
+        <item>@string/presentStatus</item>
+        <item>@string/absentStatus</item>
+        <item>@string/tardyStatus</item>
+        <item>@string/unknownStatus</item>
+    </string-array>
+
+    <!-- Student Names -->
+    <string-array name="students">
+        <item>Andrew Whiting</item>
+        <item>Daniel Whiting</item>
+        <item>Philip Whiting</item>
+        <item>Hannah Whiting</item>
+        <item>Kevin Whiting</item>
+        <item>Debra Whiting</item>
+        <item>Anna Hollandsworth</item>
+        <item>Susan Smith</item>
+        <item>Robert Jones</item>
+        <item>Michael Brown</item>
+    </string-array>
+    <string name="title_activity_stats">Attendance Pro: Stats</string>
+</resources>

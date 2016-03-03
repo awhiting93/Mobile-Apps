@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Andrew Whiting -->
+	<!--    CS337-2     -->
+	<!--    10/4/13     -->
+	<title> My Web Page </title>
+	<meta charset="UTF-8" />
+	<meta name="author" content="Andrew Whiting" />
+	<meta name="description" content="Employee Pay Calculator and Survey" />
+	<meta name="keywords" content="calculator, employee, vector marketing, survey" />
+	<style type="text/css">
+	   div {
+	      background-color:rgba(255,255,255,0.5);
+		  border:2px solid black;
+		  border-radius: 5%;
+		  text-align:center;
+	    }
+		
+		img{
+			border:10px;
+			padding: 20px;
+		}
+		
+	    body {
+	      background-image:url(background.jpg);
+		  <!-- Image retrieved from: http://wall.alphacoders.com/index.php?s=abstract -->
+		  background-repeat:no-repeat;
+		  background-attachment:fixed;
+		  color:rgb(0,0,0);
+	    }
+		
+	    h1, h2 {
+	      text-align:center;
+		}
+		
+	    form{
+			padding:15px;
+		}
+		
+		fieldset{
+			text-align:left;
+		{
+	</style>
+</head>	
+
+<body>
+	<header>
+		<div>
+			<img src="vector.jpg" alt="Vector Marketing Logo" />
+			<!-- Retrieved from http://vectormarketing.com/ -->
+			<h2>Employee Satisfaction Survey</h2>
+	</div>
+</header>
+	<br />
+	<div>
+		<form action="http://csweb/sparks/submit.php" method="get" name="survey" id ="survey">
+			<fieldset>
+				<legend style="font-weight:bold">Please complete the following survey.</legend>
+				<p> We here at Vector Marketing would like to know a little bit about your work experience!</p>
+					<input type="hidden" name="hidcompany" id="hidcompany" value="Vector Marketing" />
+				<label>Name:&nbsp;
+					<input type="text" placeholder=" ex. Andrew Whiting" maxlength="20" name="name" id="name" />
+				</label>
+				<label>&nbsp;&nbsp;Hours Worked:
+					<input type="number" placeholder=" ex. 40" name="hours_worked" id="hours_worked" />
+				</label>
+				<br />
+				<br />
+				<label>Pay Rate: $
+					<input type="text" placeholder=" ex. 7.25" name="pay_rate" id="pay_rate" />
+				</label>
+				<br />
+				<br />
+				<label> Would you say you are satisfied with your current pay rate?</label>
+					<br />
+					<label>Yes<input type="radio" name="rate" id="yes_rate" value="y" /></label>
+					<label>No<input type="radio" name="rate" id="no_rate" value="n" /></label>
+				<br />
+				<label> Would you say you are satisfied with the amount of hours you work?</label>
+					<br />
+					<label>Yes<input type="radio" name="hours" id="yes_hours" value="y" /></label>
+					<label>No<input type="radio" name="hours" id="no_hours" value="n" /></label>
+				
+				<br />
+				<label> Would you say you enjoy working with Vector Marketing Corporation?</label>
+					<br />
+					<label>Yes<input type="radio" name="enjoy" id="yes_enjoy" value="y" /></label>
+					<label>No<input type="radio" name="enjoy" id="no_enjoy" value="n" /></label>
+				<br />
+				<label>How pleased would you say you are with your work condition?</label>
+					<select name="workcondition" id="workcondition" >
+						<option value="1"> Extremely Pleased </option>
+						<option value="2"> Moderately Pleased </option>
+						<option value="3" selected="selected"> Indifferent </option>
+						<option value="4"> Moderately Displeased </option>
+						<option value="5"> Extremely Displeased </option>
+					</select>
+				<br />
+				<br />
+				<label>Which days of the week would you prefer to work?</label>
+				<br />
+				<label>Sunday<input type="checkbox" name="preferred_days" id="sun" value="sun" /></label>
+				<label>Monday<input type="checkbox" name="preferred_days" id="mon" value="mon" /></label>
+				<label>Tuesday<input type="checkbox" name="preferred_days" id="tues" value="tues" /></label>
+				<label>Wednesday<input type="checkbox" name="preferred_days" id="wed" value="wed" /></label>
+				<label>Thursday<input type="checkbox" name="preferred_days" id="thurs" value="thurs" /></label>
+				<label>Friday<input type="checkbox" name="preferred_days" id="fri" value="fri" /></label>
+				<label>Saturday<input type="checkbox" name="preferred_days" id="sat" value="sat" /></label>
+				<br />
+				<input type="submit" />
+			</fieldset>
+		</form>
+	</div>
+</body>	
+</html>		

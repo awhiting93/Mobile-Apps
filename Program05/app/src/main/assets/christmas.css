@@ -1,0 +1,21 @@
+/* Andrew Whiting */
+/*    CS337-2     */
+/*    11/25/13    */
+
+div {
+	text-align:center;
+	background-color:rgba(50,50,50,0.5);
+	padding: .25px;
+	margin: 2px;
+	border-radius: 5%;
+	color:white;
+}
+
+body {
+  background-image:url(christmas.jpg);
+  /* Image retrieved from www.acpwc.org */
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  color:rgb(0,0,0);
+}

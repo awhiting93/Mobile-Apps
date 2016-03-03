@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@android:color/holo_green_dark"
+    android:weightSum="1"
+    android:id="@+id/app_layout"
+    android:orientation="vertical"
+    android:padding="17sp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/stats_heading"
+        android:id="@+id/studentNameView"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:background="@color/material_grey_600"
+        android:textColor="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/material_grey_600"
+        android:layout_marginTop="25sp">
+
+
+        <LinearLayout
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="0.39"
+            android:layout_margin="7sp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/presentHeading"
+                android:layout_gravity="end"
+                android:id="@+id/presentHeading"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/absentHeading"
+                android:layout_gravity="end"
+                android:id="@+id/absentHeading"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/tardyHeading"
+                android:layout_gravity="end"
+                android:id="@+id/tardyHeading"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/unknownHeading"
+                android:layout_gravity="end"
+                android:id="@+id/unknownHeading"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/totalHeading"
+                android:layout_gravity="end"
+                android:id="@+id/totalHeading"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="123dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="7sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/defaultValue"
+                android:layout_gravity="start"
+                android:id="@+id/numberPresent"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/defaultValue"
+                android:layout_gravity="start"
+                android:id="@+id/numberAbsent"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/defaultValue"
+                android:layout_gravity="start"
+                android:id="@+id/numberTardy"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/defaultValue"
+                android:layout_gravity="start"
+                android:id="@+id/numberUnknown"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/defaultValue"
+                android:layout_gravity="start"
+                android:id="@+id/numberTotal"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/backToStudents"
+        android:id="@+id/backButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15sp"/>
+
+</LinearLayout>

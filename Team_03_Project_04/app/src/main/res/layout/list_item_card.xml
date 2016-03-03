@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/title_border">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="4dp"
+        android:id="@+id/deleteCardButton"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="@string/delete_button"/>
+    <TextView
+        android:id="@+id/cardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_toLeftOf="@+id/deleteCardButton"
+        android:layout_toStartOf="@+id/deleteCardButton"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:padding="4dp"
+        android:layout_margin="5dp"
+        android:layout_alignBottom="@+id/deleteCardButton"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/fragment_border"
+        android:gravity="center" />
+
+</RelativeLayout>

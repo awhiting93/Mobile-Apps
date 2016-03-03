@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".VerseReaderActivityFragment"
+    android:layout_centerVertical="true">
+
+    <TextView android:text="@string/select_a_book"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/basic_text"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/basic_text"
+        android:layout_centerVertical="true"
+        android:id="@+id/fjohn_button"
+        android:textSize="30sp"
+        android:text="@string/first_john"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/fjohn_button"
+        android:id="@+id/sjohn_button"
+        android:textSize="30sp"
+        android:text="@string/second_john"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/sjohn_button"
+        android:id="@+id/tjohn_button"
+        android:textSize="30sp"
+        android:text="@string/third_john"/>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Andrew Whiting -->
+	<!--    CS337-2     -->
+	<!--    11/25/13    -->
+	<title> My Web Page </title>
+	<meta charset="UTF-8" />
+	<meta name="author" content="Andrew Whiting" />
+	<meta name="description" content="Christmas/Thanksgiving countdown timer" />
+	<meta name="keywords" content="christmas, thanksgiving, countdown" />
+	<link id="hollidayStyles" href="thanksgiving.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+	<!--
+		var currentHoliday = "thanksgiving";
+		
+		function calcHolidayCountdown()
+		{
+			var currentDate  = new Date();
+			var thanksgiving = new Date("November 27, 2015")
+			var christmas    = new Date("December 25, 2015")
+			var days;
+			var hours;
+			var minutes; 
+			var seconds;
+
+			if(currentDate > thanksgiving)
+				thanksgiving = new Date("November 27, " + (currentDate.getFullYear() + 1));
+			if(currentDate > christmas)
+				christmas = new Date("December 25, " + (currentDate.getFullYear() + 1))
+			
+			if (currentHoliday == "thanksgiving")
+				days = calcDaysLeft(thanksgiving, currentDate);
+			else if(currentHoliday = "christmas")
+				days = calcDaysLeft(christmas, currentDate);
+			
+			hours   = calcHours  (days);	
+			minutes = calcMinutes(hours);
+			seconds = calcSeconds(minutes);		
+
+			document.getElementById("timeLeft").innerHTML = 
+			Math.floor(days)    + " day(s) "    +
+			Math.floor(hours)   + " hour(s) "   +
+			Math.floor(minutes) + " minute(s) " +
+			Math.floor(seconds) + " second(s) ";
+		}
+		function calcDaysLeft(currentHolliday, currentDate)
+		{
+			return (currentHolliday - currentDate) / (1000 * 60 * 60 * 24);
+		}
+
+		function calcHours(days)
+		{
+			return ((days - Math.floor(days)) * 24)
+		}
+		function calcMinutes(hours)
+		{
+			return ((hours - Math.floor(hours)) * 60)
+		}
+		function calcSeconds(minutes)
+		{
+			return ((minutes - Math.floor( minutes)) * 60)
+		}
+		function displayThanksgiving()
+		{
+			currentHoliday = "thanksgiving";
+			document.getElementById("hollidayStyles").href = "thanksgiving.css";
+			document.getElementById("timeLeftTitle").innerHTML = "Time Remaining Until Thanksgiving:"
+		}
+		function displayChristmas()
+		{
+			currentHoliday = "christmas";
+			document.getElementById("hollidayStyles").href = "christmas.css";
+			document.getElementById("timeLeftTitle").innerHTML = "Time Remaining Until Christmas:"
+		}
+	//-->
+	</script>
+</head>
+<body onload="setInterval('calcHolidayCountdown()', 1000)">
+	<div>
+	   <h1>Holiday Countdown!</h1>
+	</div>
+	<br />
+	<br />
+	<div>
+		<h2 id="timeLeftTitle">Time Remaining Until Thanksgiving:</h2>
+		<br />
+		<h2 id="timeLeft">- - : - - : - -</h2>
+		<br />
+		<br />
+		<input id="thanksgivingButton" type="button" onclick="displayThanksgiving()" value="Thanksgiving Countdown!">
+		<input id="christmasButton" type="button" onclick="displayChristmas()" value="Christmas Countdown!">
+		<br />
+		<br />
+		<a href="index.html" style="color:white">Return Home</a>
+		<br />
+		<br />
+	</div>
+</body>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DatabaseExample</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_add">Add a Crime</string>
+    <string name="action_del">Remove a Crime</string>
+</resources>

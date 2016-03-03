@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/holo_green_dark"
+    android:weightSum="1"
+    android:id="@+id/app_layout"
+    android:orientation="vertical"
+    android:padding="17sp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/default_name"
+        android:id="@+id/studentNameView"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:background="@color/material_grey_600"
+        android:textColor="#FFFFFF"/>
+    <LinearLayout
+        android:layout_width="217dp"
+        android:layout_height="190dp"
+        android:id="@+id/statusSelector"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/presentStatus"
+                android:id="@+id/presentButton"
+                android:layout_gravity="left"
+                android:checked="true"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/absentStatus"
+                android:id="@+id/absentButton"
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tardyStatus"
+                android:id="@+id/tardyButton"
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unknownStatus"
+                android:id="@+id/unknownButton"
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="61dp"
+        android:id="@+id/nextPreviousLayout"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.32">
+
+        <Button
+            android:layout_width="160sp"
+            android:layout_height="fill_parent"
+            android:text="@string/previousButton"
+            android:id="@+id/previousButton"
+            android:layout_gravity="left"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:layout_width="160sp"
+            android:layout_height="fill_parent"
+            android:text="@string/nextButton"
+            android:layout_gravity="right"
+            android:id="@+id/nextButton"
+            android:layout_weight="0.10"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="61dp"
+        android:text="@string/calcStatsButton"
+        android:id="@+id/finishButton"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.12" />
+</LinearLayout>
